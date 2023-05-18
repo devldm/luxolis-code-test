@@ -2,7 +2,7 @@ import Image from "next/image";
 import { ChangeEvent, FormEvent } from "react";
 
 interface formInputProps {
-  svg: any;
+  svg: string;
   setFormStateFn: (e: ChangeEvent<HTMLInputElement>) => void;
   placeholder: string;
   id: string;

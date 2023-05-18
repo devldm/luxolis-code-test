@@ -40,7 +40,7 @@ const Home: NextPage = () => {
       ) : (
         <main className="flex min-h-screen flex-col items-center justify-center bg-bg-blue">
           <Image
-            src={background}
+            src={background as string}
             alt="Background svg graphics"
             className="absolute h-full w-full object-cover"
           />
@@ -51,7 +51,7 @@ const Home: NextPage = () => {
                 popUpText={"The provided password is wrong"}
               />
             ) : null}
-            <Image src={cart} alt="icon of a cart with up arrow" />
+            <Image src={cart as string} alt="icon of a cart with up arrow" />
             <div className="grid grid-cols-1 gap-4">
               <form
                 action=""
@@ -67,7 +67,7 @@ const Home: NextPage = () => {
                 }}
               >
                 <FormInput
-                  svg={user}
+                  svg={user as string}
                   setFormStateFn={(e) => {
                     setFormState({
                       ...formState,
@@ -80,7 +80,7 @@ const Home: NextPage = () => {
                   svgAlt={"user icon"}
                 />
                 <FormInput
-                  svg={lock}
+                  svg={lock as string}
                   setFormStateFn={(e) => {
                     (e.target as HTMLInputElement).setCustomValidity("");
                     setFormState({
