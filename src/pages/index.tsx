@@ -42,7 +42,7 @@ const Home: NextPage = () => {
           <Image
             src={background as string}
             alt="Background svg graphics"
-            className="absolute h-full w-full object-cover"
+            className="absolute min-h-screen min-w-full object-cover"
           />
           <div className="container z-10 flex flex-col items-center justify-center gap-12 px-2 py-16">
             {wrongPassword ? (
