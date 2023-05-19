@@ -1,5 +1,7 @@
 # Luxolis code test
 
+Hosted version can be found at https://luxolis-code-test.vercel.app/
+
 ## Requirements
 - [x] Responsive
 - [x] Wrong combination error state
